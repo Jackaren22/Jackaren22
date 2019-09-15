@@ -15,8 +15,30 @@ public class homework1 {
 		
 		String age = input.nextLine();
 		
-		System.out.println("\n\tInformation:");
-		System.out.println(name + "\n" + age);
+		System.out.println("What is your adress? ");
+		
+		String adress = input.nextLine();
+		
+		System.out.println("What is your ZIP code? ");
+		
+		String zipcode = input.nextLine();
+		
+		System.out.println("What city do you live in? ");
+		
+		String city = input.nextLine();
+		
+		System.out.println("What is your phonenumber? ");
+		
+		String number = input.nextLine();
+		
+		
+		 
+		
+		
+		
+		System.out.println("Information:");
+		System.out.println("Name:" + "\t" + "\t" + name + "\n" + "Age:" + "\t" + "\t"+ age + "\n" + "Adress:" + "\t" + "\t" +  adress +
+				"\n" +  "\t" + "\t" +zipcode + "\n"  + "\t" + "\t" + city + "\n" + "Number:" + "\t" + "\t" + number);
 
 	}
 
