@@ -21,8 +21,9 @@ public class uppgift3 {
 		}
 		    antal--;
 			double medel = total / antal;
-			System.out.println("Totalt:" + total + "\n" + "Medelvärde:" + medel +);
+			System.out.println("Totalt:" + total + "\n" + "Medelvärde:" + medel);
 		}
+	
 	
 
 	}
