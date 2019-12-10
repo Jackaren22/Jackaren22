@@ -42,12 +42,12 @@ public class homework6 {
 		System.out.println(amountNumbers(numbers));
 		System.out.println();
 
-		// Hur många namn som har bokstaven L i sig
-		System.out.println(letterL(names) + " Namn inehåller bokstaven L");
+		// Hur många namn som börjar med bokstaven L
+		System.out.println(letterL(names) + " Namn börjar med bokstaven L");
 		System.out.println();
 
-		// Hur många namn som inehåller 5 eller flera bokstäver
-		System.out.println(fiveLetters(names) + " Är antalet namn som har 5 eller mera bokstäver i sig");
+		// Hur många namn som inehåller 5 bokstäver
+		System.out.println(fiveLetters(names) + " Är antalet namn som har 5 bokstäver i sig");
 		System.out.println();
 
 		// Hur många unika namn det finns
@@ -58,7 +58,11 @@ public class homework6 {
 		System.out.println(mostNames(names) + " Är namnet som återkommer mest");
 
 	}
-
+/**
+ * Denna metod tar fram hur många 7:or det finns i en viss array
+ * @param numbers
+ * @return sevens
+ */
 	public static int Sevens(int[] numbers) {
 
 		int sevens = 0;
@@ -72,7 +76,11 @@ public class homework6 {
 		return sevens;
 
 	}
-
+/**
+ * Denna metod tar fram hur många gånger namnet Tom kommer upp i en viss array
+ * @param names
+ * @return tom
+ */
 	public static int Tom(String[] names) {
 
 		int tom = 0;
@@ -85,7 +93,11 @@ public class homework6 {
 		}
 		return tom;
 	}
-
+/**
+ * Denna metoden tar fram talet som återkommer mest i en viss array
+ * @param numbers
+ * @return most
+ */
 	private static int mostNumbers(int[] numbers) {
 
 		int most = 0;
@@ -109,7 +121,11 @@ public class homework6 {
 		}
 		return most;
 	}
-
+/**
+ * Denna metoden tar fram talet som återkommer minst i en viss array
+ * @param numbers
+ * @return least
+ */
 	public static int least(int[] numbers) {
 		int least = 0;
 		int ammount;
@@ -129,7 +145,11 @@ public class homework6 {
 		}
 		return least;
 	}
-
+/**
+ * Denna metoden berättar vilken plats namnet Drusilla ligger på i en viss array
+ * @param names
+ * @return drusilla
+ */
 	public static int Drusilla(String[] names) {
 		int drusilla = 0;
 		for (int i = 0; i < names.length; i++) {
@@ -140,7 +160,11 @@ public class homework6 {
 		}
 		return drusilla;
 	}
-
+/**
+ * Denna metoden tar fram summan på alla jämna tal i en viss aray
+ * @param numbers
+ * @return sum
+ */
 	public static int evenAmount(int[] numbers) {
 		int sum = 0;
 		for (int i = 0; i < numbers.length; i++) {
@@ -150,7 +174,13 @@ public class homework6 {
 		}
 		return sum;
 	}
-
+/**
+ * Denna metod tar fram hur många gånger varje siffra återkommer i en viss array
+ * @param numbers
+ * @return antal 
+ * 
+ * antal = Antalet gånger alla siffor återkommer i ett string format
+ */
 	public static String amountNumbers(int[] numbers) {
 		int zero = 0;
 		int one = 0;
@@ -190,7 +220,11 @@ public class homework6 {
 				+ seven + " Antal åttor: " + eight + " Antal nior: " + nine;
 		return antal;
 	}
-
+/**
+ * Denna metoden tar fram hur många namn som börjar med bokstaven L i en viss array
+ * @param names
+ * @return antalL
+ */
 	public static int letterL(String[] names) {
 		int antalL = 0;
 		for (int i = 0; i < names.length; i++) {
@@ -201,7 +235,11 @@ public class homework6 {
 
 		return antalL;
 	}
-
+/**
+ * Denna metoden tar fram hur många namn som är exakt 5 bokstäver långt i en viss array
+ * @param names
+ * @return fem
+ */
 	public static int fiveLetters(String[] names) {
 		int fem = 0;
 		for (int i = 0; i < names.length; i++) {
@@ -211,7 +249,11 @@ public class homework6 {
 		}
 		return fem;
 	}
-
+/**
+ * Denna metoden tar fram hur många unika namn det finns i en viss array
+ * @param names
+ * @return unique
+ */
 	public static int uniqueNames(String[] names) {
 		int unique = 0;
 		int sum = 0;
@@ -232,7 +274,11 @@ public class homework6 {
 		}
 		return sum;
 	}
-
+/**
+ * Denna metoden tar fram namnet som återkommer mest gånger i en viss array
+ * @param names
+ * @return name
+ */
 	private static String mostNames(String[] names) {
 
 		int most = 0;
