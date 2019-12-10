@@ -122,8 +122,7 @@ public class methodlibrary {
 	 */
 	public static double Kinetisk(double massa, double hastighet) {
 
-		double kinetisk2 = massa * hastighet;
-		double kinetisk = (Math.pow(kinetisk2, 2) / 2);
+		double kinetisk = massa * hastighet;
 		return kinetisk;
 
 	}
