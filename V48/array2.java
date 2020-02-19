@@ -10,7 +10,7 @@ public class array2 {
 
 		for (int i = 0; i < namn.length; i++) {
 			int antalA = 0;
-			namn[i].
+			
 
 		}
 

@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 public class arrayer {
 
+	
 	public static void main(String[] args) {
 
+	
 		Scanner input = new Scanner(System.in);
 		
 		int[] nummer = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // Skapar en array och fyller den med 10 tal
