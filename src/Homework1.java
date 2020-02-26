@@ -1,6 +1,6 @@
 import java.util.Scanner; // behövs om man vill ha input
 
-public class homework1 {
+public class Homework1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
