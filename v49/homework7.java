@@ -88,3 +88,4 @@ public class homework7 {
 		return Scenario1c1; 
 
 	}
+}
