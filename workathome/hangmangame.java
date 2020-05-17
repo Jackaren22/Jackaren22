@@ -10,7 +10,7 @@ public class hangmangame {
 	public static String answer = Randomizer().toLowerCase(); // Slumpat ord från ordlistan
 	public static char[] hiddenword = Hiddenword(answer); // Det slumpade ordet fast det är gömt
 	public static String transform = new String(hiddenword); // Omvandlar den gömda char arrayen till en String
-	public static int tries = 10; // Antal försök
+	public static int tries = 10; 
 	/*
 	 * Main metoden använder sig utav alla submetoder jag har, jag planerar på att tunna ned det lite mer också, även ifall det är relativt lite i main metoden enligt mig
 	 */
@@ -20,9 +20,9 @@ public class hangmangame {
 		
 		int playagain = 1;
 		
-		while (playagain == 1) { // Simpel while loop för att kunna köra spelet flera gånger
+		while (playagain == 1) { 
 		
-		tries = 10; // Här kör jag om flera saker som sker utanför koden, detta är för att annars hade det inte varit ett nytt ord om man startar om spelet genom while loopen.
+		tries = 10; 
 		answer = Randomizer().toLowerCase();
 		hiddenword = Hiddenword(answer);
 		transform = new String(hiddenword);
@@ -47,9 +47,8 @@ public class hangmangame {
 			System.out.println("Guess a letter in the word!");
 			System.out.println(transform);
 			System.out.println(guessedletters);
-			String guess = input.next();
-			guess.toLowerCase();
-			guessedletters.add(guess);
+			String guess = input.next().toLowerCase();
+			guessedletters.add(guess);   			
 			guess(guess);
 		}
 			
@@ -94,13 +93,13 @@ public class hangmangame {
     			progress += answer.charAt(i);
     		}
     		else {
-    			progress += "-"; // Ifall ingen av de andra if satserna uppfylls så kommer denna skriva ut ett likadant gömt ord som transform så att när transform = progress upfylls så orsakas det inga problem 
+    			progress += "-";  
   
     		}
     		
     	}
     	
-    	if (guess.equals(answer)) { // Denna if sats låter spelet avslutas om man gissar hela ordet direkt
+    	if (guess.equals(answer)) { 
     		transform = guess;
     	}
     	
@@ -124,7 +123,7 @@ public class hangmangame {
     	System.out.println("(1) SinglePlayer  [A random word for a wordlist will be picked and you have to figure out the word");
     	System.out.println("(2) 2 Player Mode [One player picks a word and then gives the computer to the other player and they have to figure out the word");
     	System.out.println();
-    	System.out.println("WARNING: IF YOU TYPE ANYTHING ELSE BUT NUMBERS THE GAME WILL CRASH, ALSO IF YOU TYPE ANY OTHER NUMBER THAN 1 THE GAME WITH AUTOMATICALY BE PUT INTO SINGLEPLAYER");
+    	System.out.println("WARNING: IF YOU TYPE ANYTHING ELSE BUT NUMBERS THE GAME WILL CRASH, ALSO IF YOU TYPE ANY OTHER NUMBER THAN 2 THE GAME WITH AUTOMATICALY BE PUT INTO SINGLEPLAYER");
       }
     /*
      * Denna metod tar slumpmässigt fram ett tal från 0 - antalet ord i ord listan. När den har slumpat ett tal kommer den att ta ordert som är på den platsen som talet visar.
